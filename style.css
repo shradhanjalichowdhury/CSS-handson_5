@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 160vh;
+    background-image: url("./background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .navbar {
+    margin: 0 8%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo {
+      margin-top: 25px;
+  }
+  
+  .logo img {
+    width: 60px;
+  }
+  
+  .navbar2 {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbaritem {
+    margin-right: 10px;
+  }
+  
+  .navbaritem ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 33px;
+    color: white;
+    font-size: 15px;
+  }
+  
+  .navbaritem a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .menu img {
+    width: 40px;
+  }
+  
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .container {
+    width: 45%;
+   
+  }
+  
+  .heading {
+    font-size: 38px;
+  }
+  
+  .content {
+    line-height: 22px;
+  }
+  
+  .button {
+    padding: 15px 40px;
+    text-align: center;
+    border-radius: 30px;
+    border: none;
+    margin-top: 30px;
+    font-size: 16px;
+  }
+  
+  .pics {
+    width: 39%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    gap:30px;
+  }
+  
+  .box {
+    width: 220px;
+    height: 240px;
+    border-radius: 10px;
+    padding: 20px 24px;
+    transition: transform 0.4s;
+  }
+  
+  .box:hover {
+    transform-origin: top;
+    transform: translateY(-12px);
+    cursor: pointer;
+  }
+  
+  .box p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  
+  .img1 {
+    background-image: url("./picture2.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  .img2 {
+    background-image: url("./picture3.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  .img3 {
+    background-image: url("./picture4.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  .img4 {
+    background-image: url("./picture5.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
+  @media screen and (max-width: 900px) {
+    body {
+      background-size: 115% 100%;
+      background-repeat: repeat;
+      background-position: center top;
+    }
+  
+    .main {
+      display: unset;
+    }
+  
+    .container {
+      width: unset;
+      margin: 0 8%;
+    }
+  
+    .heading {
+      font-size: large;
+    }
+  
+    .pics {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5vh;
+    }
+  
+    .box {
+      width: 55%;
+      height: 210px;
+    }
+  
+    .line {
+      display: none;
+      font-size: 14px;
+    }
+  
+  }
+  
+ 
+  @media screen and (min-width: 280px) and (max-width: 500px) {
+      body {
+          background-size: 300% 100%;
+          background-repeat: repeat;
+          background-position: center top;
+        }
+  
+        .navbar2-item ul li{
+          display: block;
+          margin-right: unset;
+        }
+    }
