@@ -5,7 +5,7 @@
   }
   
   body {
-    height: 160vh;
+    height: 100vh;
     background-image: url("./background.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -132,7 +132,7 @@
   }
   
   
-  @media screen and (max-width: 900px) {
+  @media screen and (min-width: 500px) and (max-width: 900px) {
     body {
       background-size: 115% 100%;
       background-repeat: repeat;
@@ -172,7 +172,7 @@
   }
   
  
-  @media screen and (min-width: 280px) and (max-width: 500px) {
+  @media screen and (min-width: 250px) and (max-width: 500px) {
       body {
           background-size: 300% 100%;
           background-repeat: repeat;
